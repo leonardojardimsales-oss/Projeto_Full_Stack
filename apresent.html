@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação - Jogo da Cobrinha</title>
+
+  <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+  <audio id="menuAudio" src="TheDrippingTap_menu.mp3" loop preload="auto"></audio>
+  <audio id="jogoAudio" src="TheDrippingTap_game.mp3" loop preload="auto"></audio>
+
+  <a href="menu_inicial.html"><button class="botao_voltar">Voltar</button></a>
+
+  <div class="content">
+    <h1>Jogo da Cobrinha</h1>
+
+    <img src="image.png" alt="Exemplo de jogo da cobrinha" width="500" height="500">
+
+    <div class="explicacao">
+      <p>O Jogo da Cobrinha é um clássico digital conhecido por sua jogabilidade simples e divertida. Sua primeira versão foi inspirada no jogo <strong>Blockade</strong>, de 1976, e desde então ganhou várias versões em videogames e computadores.</p>
+    </div>
+
+    <div class="explicacao">
+      <h2>Como funciona</h2>
+      <ul>
+        <li>
+          <strong>Modos de jogo:</strong>
+          O jogo oferece dois modos principais: o modo tradicional, em que o jogador tenta preencher o maior número de espaços possível, e o modo limitado, em que o objetivo é alcançar <strong>45 pontos</strong> antes de perder.
+        </li>
+        <li>
+          <strong>Jogabilidade:</strong>
+          O jogador controla a cobra em quatro direções: direita, esquerda, cima e baixo. A cada maçã comida, a serpente cresce e o desafio aumenta. A partida termina se a cobra bater na parede ou no próprio corpo.
+        </li>
+        <li>
+          <strong>Maçãs adicionais:</strong>
+          A cada 10 pontos, novas maçãs são geradas, tornando o jogo mais dinâmico.
+        </li>
+      </ul>
+    </div>
+
+    <div class="explicacao">
+      <h2>Modos extras</h2>
+      <p>Após completar uma partida com sucesso, o jogador pode escolher um desafio extra. Os desafios podem ser ativados juntos para aumentar a dificuldade.</p>
+      <ul>
+        <li>
+          <strong>Purple Fruits:</strong> frutas roxas aparecem no mapa e devem ser evitadas. Se a cobra comer uma fruta roxa, o jogo termina imediatamente.
+        </li>
+        <li>
+          <strong>Crushed:</strong> a borda do tabuleiro é preenchida gradualmente, reduzindo o espaço disponível. A cada 10 pontos, a quantidade de blocos aumenta.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="audio-manager.js"></script>
+</body>
+</html>

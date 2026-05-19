@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <audio id="menuAudio" src="TheDrippingTap_menu.mp3" loop preload="auto"></audio>
+  <audio id="jogoAudio" src="TheDrippingTap_game.mp3" loop preload="auto"></audio>
+
+  <div class="menu" id="menu">
+    <h1>SNAKE GAME</h1>
+
+    <div class="area_selecionar_modo">
+      <h3>Escolha o modo:</h3>
+      <label><input type="radio" name="modoJogo" value="tradicional" checked> Tradicional</label>
+      <label><input type="radio" name="modoJogo" value="limite45"> 45 Pontos</label>
+    </div>
+
+    <button id="botao_comecar" class="botao_menu"><ins>Começar</ins></button>
+    <button class="botao_menu"><a href="apresent.html">Apresentação</a></button>
+    <button class="botao_menu"><a href="creditos.html">Créditos</a></button>
+  </div>
+
+  <div class="jogo hidden" id="jogo">
+    <div class="barra_superior">
+      <h2>Pontuação: <span id="pontuacao">0</span> / <span id="pontuacaoMax">0</span></h2>
+    </div>
+
+    <canvas id="canva" width="400" height="400"></canvas>
+
+    <div class="tela_derrota hidden" id="tela_gameover">
+      <h2>Fim de Jogo!</h2>
+      <div class="botoes_gameover">
+        <button id="botao_reiniciar">Jogar Novamente</button>
+        <button id="botao_voltar">Voltar ao Menu</button>
+      </div>
+    </div>
+
+    <div class="painel_modoEx hidden" id="painel_modoEx">
+      <h3>Adicionar modo?</h3>
+      <div class="botoes_modos">
+        <button id="botao_roxo">Purple Fruits</button>
+        <button id="botao_crush">Crushed</button>
+        <button id="botao_semModo">Não Estou Afim</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="audio-manager.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

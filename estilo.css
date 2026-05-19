@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu,
+.jogo {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 42px;
+}
+
+.barra_superior {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#botao_comecar,
+.botao_menu,
+#botao_reiniciar,
+#botao_voltar,
+#botao_roxo,
+#botao_crush,
+#botao_semModo {
+  background: #2ecc71;
+  color: #ffffff;
+  display: inline-block;
+}
+
+a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#botao_reiniciar {
+  background: #3498db;
+}
+
+#canva {
+  background: #1c1c1c;
+  border: 4px solid #2ecc71;
+}
+
+.tela_derrota {
+  margin-top: 20px;
+}
+
+.area_selecionar_modo,
+.painel_modoEx {
+  margin-bottom: 20px;
+}
+
+.botoes_gameover,
+.botoes_modos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
